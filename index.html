@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+       
+    </script>
+</head>
+
+<body>
+    <div class="cabecalho">
+        <h1>Criptografia</h1>
+        <p>Criptografia de cesar e base 64</p>
+        <div class="botoes" style="justify-content: space-around;">
+            <div>
+                <input type="button" name="criptografias" id="Cifra-de-Cesar" value="Cifra de Cesar">
+               
+            </div>
+            <div>
+                <input type="button" name="criptografias" id="Base-64" value="Base 64">
+            </div>
+        </div>
+
+
+    </div>
+    <div class="texto-descritivo">
+        <h2>Bem vindo a pagina de criptografia</h2>
+        <p>Para usar os recursos do site, é necessário escolher uma das opções de criptografia a cima</p>
+        <h3>Cifra de cesar:</h3>
+        <p>No campo de texto, colocar o texto que queira criptografar ou descriptografar, colocar no campo seguinte, um numero inteiro(positivo ou negativo) que servirá de incremento para a ação desejada</p>
+        <h3>Base 64:</h3>
+        <p>Mesmo procedimento do cifra de cesar, porém, não há a necessidade de um incremento</p>
+        <p>Este site é um trabalho individual solicidado pelo Programa Programadores Cariocas, feito pelo aluno Gabriel da Conceição</p>
+    </div>
+    <br>
+    <div class="campo-texto">
+        <form id="formulario">
+            <label >Texto:<input type="text" id="texto"></label>
+            <br>
+            <label class="incremento"> incremento:<input type="text" class="incremento" id="incremento"></label>
+            <br>
+            <div class="botoes">
+                
+                <label><input type="radio" name="selecionar" value="criptografar" >Criptografar</label>
+                <label ><input type="radio" name="selecionar" value="descriptografar">Descriptografar</label>
+            </div>
+            <br>
+            <input type="submit" value="" id="Enviar">
+            <br>
+            <p id="resultado"></p>
+
+        </form>
+
+
+    </div>
+    
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
